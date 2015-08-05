@@ -1,0 +1,132 @@
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+It helped me easily find the difference.
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+It can help me find any better thing which was implemented in the previous versions. 
+
+
+Command which were told in this tutorial lesson -:
+git log
+- git diff
+ - To check the chenges between the two commits use ..
+ 	- git diff commitId_1 commitId_2
+
+
+ What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google docs does?
+
+It takes care of saving just the terse and logical commits instead of the long commits.
+
+git log --stat (Will give description about each changes done to the file in each commit)
+
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+Because git understands that there could be multiple related files in one commit.
+
+
+
+==================
+git reflog is also one of the good command which tells 
+==================
+
+
+Getting Colored Output
+
+To get colored diff output, run git config --global color.ui auto
+
+
+How can you use the commands git log and git diff to view the history of files?
+- This can be done using the command as mentioned above
+
+
+How might using version control make you more confident to make changes that could break something?
+- Version control helps as we can checkout or go to previous version of code to see which particular commit has caused the problem.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+- Lets check how more git can help us in tracking the versions for us.
+
+=====================
+git status -: this commands gives the list of files which has been changes since last commit
+
+
+
+=====================
+
+
+
+
+
+Git Errors and Warnings Solution
+
+Should not be doing an octopus 
+Octopus is a strategy Git uses to combine many different versions of code together. This message can appear if you try to use this strategy in an inappropriate situation.
+
+You are in 'detached HEAD' state 
+HEAD is what Git calls the commit you are currently on. You can “detach” the HEAD by switching to a previous commit, which we’ll see in the next video. Despite what it sounds like, it’s actually not a bad thing to detach the HEAD. Git just warns you so that you’ll realize you’re doing it.
+
+Panic! (the 'impossible' happened) 
+This is a real error message, but it’s not output by Git. Instead it’s output by GHC, the compiler for a programming language called Haskell. It’s reserved for particularly surprising errors!
+
+Takeaway We hope these errors and warnings amused you as much as they amused us! Now that you know what kind of errors Git can throw, you’re ready to start checking out previous versions of files with Caroline.
+
+
+
+===================
+To go to any previous commit -  we can use ->  git checkout commit_Id
+
+
+
+===================
+
+Tracking versions using Git
+
+You would be able to see the difference between the two versions, but you would no longer be able to directly access the old version.
+
+This is false. You could still access the old version of the file by checking out the commit associated with that version. Then the recipe would temporarily revert to its state at the time that commit was made. 
+
+
+Using git diff to compare the two versions would show the same changes as diff -u did in the previous exercise.
+
+This is true. diff -u and git diff show very similar outputs. Even if the exact format was slightly different, the actual changes indicated would be the same. 
+
+
+The name of the file would change when you saved a second version in Git.
+
+This is false. The name of the file would remain the same. Git does not rename files when you save a new commit. Instead, Git uses the commit IDs to refer to different versions of the files, and you can use git checkout to access old versions of your files. 
+
+
+To save two versions of the file, you would create two commits.
+
+This is true. Commits are Git's way of saving versions, so to save two different versions, you would create two commits.
+
+
+
+====================
+
+Behavior of git clone
+
+If someone else gives you the location of their directory or repository, you can copy or clone it to your own computer.
+
+This is true for both copying a directory and cloning a repository.
+
+As you saw in the previous lesson, if you have a URL to a repository, you can copy it to your computer using git clone.
+
+For copying a directory, you weren't expected to know this, but it is possible to copy a directory from one computer to another using the command scp, which stands for "secure copy". The name was chosen because the scp command lets you securely copy a directory from one computer to another. 
+
+
+The history of changes to the directory or repository is copied.
+
+This is true for cloning a repository, but not for copying a directory. The main reason to use git clone rather than copying the directory is because git clone will also copy the commit history of the repository. However, copying can be done on any directory, whereas git clone only works on a Git repository. 
+
+
+If you make changes to the copied directory or cloned repository, the original will not change.
+
+This is true for both copying a directory and cloning a repository. In both cases, you're making a copy that you can alter without changing the original. 
+
+
+The state of every file in the directory or repository is copied.
+
+This is true for both copying a directory and cloning a repository. In both cases, all the files are copied.
+
+
+
+
