@@ -1,0 +1,13 @@
+What happens when you initialize a repository? Why do you need to do it?
+It sets up teh repository with the git and now we can track the versions of the file.
+
+
+=============
+git add -> By this we can add specific files to specific area..
+
+git reset fileName ->  By this we can remove a particular file from the staging area. But the file would still present in the working directory.
+=============
+
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+In my view staging area is for the changes which are about to be committed. It seperates the files which are present in working dir but not to be added in the commit.
