@@ -31,11 +31,12 @@ master?  What benefits does each approach have?
 Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
 this make sense in time when we are in between something and we only want to look at the remote changes after a certain amount of time.
 
-
-
-
-
-
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+forks -: To fork (Kind of Clone) someone else repository on Github as we dont have the permission to change anything in there repository.
+clone (Repository can be cloned locally from a repos present locally, or it can be cloned from the repos from the github).
+branches -: when we want to implement some new feature or experimental change then we create a branch from the existing branch.
+	
+	
 My Extras -:
 
 Lession 3 learnings -:
