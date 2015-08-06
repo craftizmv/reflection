@@ -35,8 +35,11 @@ Describe the differences between forks, clones, and branches. When would you use
 forks -: To fork (Kind of Clone) someone else repository on Github as we dont have the permission to change anything in there repository.
 clone (Repository can be cloned locally from a repos present locally, or it can be cloned from the repos from the github).
 branches -: when we want to implement some new feature or experimental change then we create a branch from the existing branch.
-	
-	
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+It helps us to see by how much our corresponding local branch is ahead with remote.
+And later if something is added by other collaborater then that also we can keep track of.
+
 My Extras -:
 
 Lession 3 learnings -:
@@ -44,8 +47,33 @@ Lession 3 learnings -:
 1. Github contains many opensource project in which we can contribute .. these can be small as well as big ..
 =============
 git remote -> to see the list of remote branches
-
+	
 git remote add origin URL_OF_THE_CREATED_REPOS
 
 git remote -v (Verbose - display the url to push the data from and the url to push the data to ..)
+
 =============
+
+
+=============
+Basically when we do "git pull origin master" it is equivalent to the git fetch (which update any remote branch changes locally)
+and 
+git merge master origin/master
+=============
+
+=============
+git branch -a (Displays the list of branches together with the remote branches..)
+=============
+
+=============
+git fetch origin (This will update all the local branches.. )
+
+git log origin/master and git diff origin/master will display the new changes..
+=============
+
+=============
+Fast forward Merges -:
+=============
+
+
+	
