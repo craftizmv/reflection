@@ -11,3 +11,47 @@ git reset fileName ->  By this we can remove a particular file from the staging 
 
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 In my view staging area is for the changes which are about to be committed. It seperates the files which are present in working dir but not to be added in the commit.
+
+
+How can you use the staging area to make sure you have one commit per logical change?
+we can use the staging area to check that .. what new thing it contain wrt to latest change in the repos.
+
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+When we are going to work on some different feature but not sure whether the new feature will be ultimate. So we can create a new branch from the existing branch and can start doing the change.
+
+How do the diagrams help you visualize the branch structure?
+Diagramme really help us to do that.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+Merging 2 branches means we want changes done on both the branches.
+It make sense.
+
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+- Git auto-merge saves our time
+- manuall merge makes sense as it will be usefull when there is ambigutty for the version to keep.
+
+
+================
+git diff -> will tell us the diffence in between the currently
+
+================
+
+================
+git diff --staged (for finding the changes which are added in the staging area and are to be committed)
+================
+
+================
+git reset --hard    -> This will discard any changes made to the staging area as well as the working directory. 
+================
+
+================
+git can also help us to visualize the branch structure ..
+
+git log --graph --oneline master coins
+================
+
+
+==============
+git show commit_Id -> will show the diff between this commit and its parent commit.

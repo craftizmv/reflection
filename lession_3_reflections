@@ -27,3 +27,24 @@ When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
     Fill in your answer here
+
+Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+this make sense in time when we are in between something and we only want to look at the remote changes after a certain amount of time.
+
+
+
+
+
+
+My Extras -:
+
+Lession 3 learnings -:
+
+1. Github contains many opensource project in which we can contribute .. these can be small as well as big ..
+=============
+git remote -> to see the list of remote branches
+
+git remote add origin URL_OF_THE_CREATED_REPOS
+
+git remote -v (Verbose - display the url to push the data from and the url to push the data to ..)
+=============
