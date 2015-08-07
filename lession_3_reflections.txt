@@ -18,15 +18,17 @@ stored locally?
 
     Fill in your answer here
 
-How would you collaborate without using Git or GitHub?  What would be easier,
+How would you collaborate without using Git or GitHub? What would be easier,
 and what would be harder?
+WO Git or Github -: In this case, we need to manually collaborate and tell the other guy to be in sync before pushing changes and merging..
+With Git -: It becomes very easy to collaborate.
 
-    Fill in your answer here
 
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
     Fill in your answer here
+
 
 Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
 this make sense in time when we are in between something and we only want to look at the remote changes after a certain amount of time.
@@ -39,6 +41,13 @@ branches -: when we want to implement some new feature or experimental change th
 What is the benefit of having a copy of the last known state of the remote stored locally?
 It helps us to see by how much our corresponding local branch is ahead with remote.
 And later if something is added by other collaborater then that also we can keep track of.
+
+
+When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+This we ll require when we are working ion some feature which is experimental or tricky and may break master or may be the quality is
+not amazing ... in that case this approach is usefull. Also if there are other collaboraters as well
+Working with approach is usefull when there is no reviewing happening and less collaboraters 1 or 2 .. and development is just for small feature.
+
 
 My Extras -:
 
@@ -76,4 +85,7 @@ Fast forward Merges -:
 =============
 
 
+=============
+git pull -> It will fetch the latest changes from the remote branch.
+=============
 	
